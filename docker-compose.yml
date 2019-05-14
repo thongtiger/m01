@@ -1,0 +1,9 @@
+version: '3'
+services:
+  m01:
+    image: m01
+    build: .
+    ports:
+      - 3004:3004
+    env_file:
+      - .env
